@@ -1,0 +1,64 @@
+C:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Multiply
+
+Top level modules:
+	Multiply
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/R2SDF_FFT.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/R2SDF_FFT.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module R2SDF_FFT
+
+Top level modules:
+	R2SDF_FFT
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/Butterfly.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/Butterfly.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Butterfly
+
+Top level modules:
+	Butterfly
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module tb_SdfUnit2Rotate
+
+Top level modules:
+	tb_SdfUnit2Rotate
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module tb_SdfUnit2
+
+Top level modules:
+	tb_SdfUnit2
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_R2SDF_FFT.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_R2SDF_FFT.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module tb_R2SDF_FFT
+
+Top level modules:
+	tb_R2SDF_FFT
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Twiddle8
+
+Top level modules:
+	Twiddle8
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module SdfUnit2Rotate
+
+Top level modules:
+	SdfUnit2Rotate
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module DelayBuffer
+
+Top level modules:
+	DelayBuffer
+
+} {} {}}
