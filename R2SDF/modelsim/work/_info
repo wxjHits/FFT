@@ -17,17 +17,17 @@ r1
 !s100 f=1H>VTeiIDKEV^]_Ude22
 IVZ<0XR>n6VL:R5;SOMcb80
 Z1 dC:/Users/hp/Desktop/FFT/R2SDF/modelsim
-w1686215416
+Z2 w1686291613
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/Butterfly.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/Butterfly.v
 L0 5
-Z2 OL;L;10.5;63
-Z3 !s108 1686228323.000000
+Z3 OL;L;10.5;63
+Z4 !s108 1686294787.000000
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Butterfly.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Butterfly.v|
 !i113 0
-Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z5 tCvgOpt 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
 n@butterfly
 vDelayBuffer
 R0
@@ -38,17 +38,17 @@ r1
 !s100 9JVPP;YAZQbZWjJQ^OC>b1
 ImHBg90g[HE?hOT]_EBU@41
 R1
-w1686213007
+R2
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v
 L0 5
-R2
 R3
+R4
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v|
 !i113 0
-R4
 R5
+R6
 n@delay@buffer
 vMultiply
 R0
@@ -59,17 +59,17 @@ r1
 !s100 FUh]I5B_G5?liZZLVYb2]2
 Io@4FolBlNIEkM6e3O[k4O3
 R1
-w1686145032
+R2
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v
 L0 5
-R2
-Z6 !s108 1686228324.000000
+R3
+Z7 !s108 1686294788.000000
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v|
 !i113 0
-R4
 R5
+R6
 n@multiply
 vR2SDF_FFT
 R0
@@ -80,17 +80,17 @@ r1
 !s100 0fB[gci_4ZKjj7HNHj3M<3
 I4?DA8mBMmPJ:C81no3VHh1
 R1
-w1686227778
+R2
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/R2SDF_FFT.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/R2SDF_FFT.v
 L0 2
-R2
-R6
+R3
+R7
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/R2SDF_FFT.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/R2SDF_FFT.v|
 !i113 0
-R4
 R5
+R6
 n@r2@s@d@f_@f@f@t
 vSdfUnit2
 R0
@@ -98,20 +98,20 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 =E:2SV96@47ORLDiF?5bn0
-Io^;5J1?QF]J;2hd2L:Z1U0
+!s100 @UE9X34JSl7mC^4nG_P]`3
+Icn6^M3YXXZk_0EEW0OcOV1
 R1
-w1686213183
+R2
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2.v
 L0 5
-R2
-R6
+R3
+R7
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2.v|
 !i113 0
-R4
 R5
+R6
 n@sdf@unit2
 vSdfUnit2Rotate
 R0
@@ -119,20 +119,20 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 TAQac31MebSlnEa09WZU=0
-I7I<KBg@o;3:E8Fa3IYI4M2
+!s100 aH`RXOUL_WCikFADK64`Q0
+IjWXXG1U5<7C3dacfLPdFA1
 R1
-w1686227068
-8C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v
-FC:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v
+w1686294751
+8C:\Users\hp\Desktop\FFT\R2SDF\RTL\SdfUnit2Rotate.v
+FC:\Users\hp\Desktop\FFT\R2SDF\RTL\SdfUnit2Rotate.v
 L0 5
-R2
-R6
-!s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v|
+R3
+R7
+!s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:\Users\hp\Desktop\FFT\R2SDF\RTL\SdfUnit2Rotate.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\hp\Desktop\FFT\R2SDF\RTL\SdfUnit2Rotate.v|
 !i113 0
-R4
 R5
+R6
 n@sdf@unit2@rotate
 vtb_R2SDF_FFT
 R0
@@ -140,64 +140,64 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 IaAS6HX;?X:<=A3:R=cB80
-I5i=DnTB9cF_OS3KfD53jW2
+!s100 jOaV7V29VYIF8e7_80EUm3
+IXTeVeNI`UJXK7<ol6_7g:3
 R1
-w1686228320
-8C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_R2SDF_FFT.v
-FC:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_R2SDF_FFT.v
+w1686294590
+8C:\Users\hp\Desktop\FFT\R2SDF\RTL\tb_R2SDF_FFT.v
+FC:\Users\hp\Desktop\FFT\R2SDF\RTL\tb_R2SDF_FFT.v
 L0 3
-R2
-R6
-!s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_R2SDF_FFT.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_R2SDF_FFT.v|
+R3
+R7
+!s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:\Users\hp\Desktop\FFT\R2SDF\RTL\tb_R2SDF_FFT.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\hp\Desktop\FFT\R2SDF\RTL\tb_R2SDF_FFT.v|
 !i113 0
-R4
 R5
+R6
 ntb_@r2@s@d@f_@f@f@t
 vtb_SdfUnit2
-Z7 !s110 1686228324
+Z8 !s110 1686294788
 !i10b 1
 !s100 V:f;m0[WOB[P2BGVke`?o2
 I:0P@bkoEc`UoKR?0Mf]A[3
 R0
 R1
-w1686145575
+R2
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-R6
+R7
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2.v|
 !i113 0
-R4
 R5
+R6
 ntb_@sdf@unit2
 vtb_SdfUnit2Rotate
-R7
+R8
 !i10b 1
 !s100 ^_9znN[k8emEO0W[HgbL51
-I;g^5=HWPV?CT>Jk7DcKkK2
+IKF4O4@M__AdMl3ke>ClKX0
 R0
 R1
-w1686214379
-8C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v
-FC:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v
-L0 2
 R2
+8C:\Users\hp\Desktop\FFT\R2SDF\RTL\tb_SdfUnit2Rotate.v
+FC:\Users\hp\Desktop\FFT\R2SDF\RTL\tb_SdfUnit2Rotate.v
+L0 2
+R3
 r1
 !s85 0
 31
-R6
-!s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v|
+R7
+!s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:\Users\hp\Desktop\FFT\R2SDF\RTL\tb_SdfUnit2Rotate.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\hp\Desktop\FFT\R2SDF\RTL\tb_SdfUnit2Rotate.v|
 !i113 0
-R4
 R5
+R6
 ntb_@sdf@unit2@rotate
 vTwiddle16
 R0
@@ -208,37 +208,37 @@ r1
 !s100 BJ0<aah4ebJ:I@YMXDlH02
 IKhS`OY[4f_1kFj:MSWGM80
 R1
-w1686227279
+R2
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle16.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle16.v
 L0 5
-R2
-R6
+R3
+R7
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle16.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle16.v|
 !i113 0
-R4
 R5
+R6
 n@twiddle16
 vTwiddle8
-R7
+R8
 !i10b 1
 !s100 []<M4XGE[iF`jUMSK`C^o0
 IV]RUbYfz<0HWo?@?JAZV=2
 R0
 R1
-w1686219585
+R2
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v
 L0 5
-R2
+R3
 r1
 !s85 0
 31
-R6
+R7
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v|
 !i113 0
-R4
 R5
+R6
 n@twiddle8

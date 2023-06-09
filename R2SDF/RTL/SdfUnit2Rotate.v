@@ -37,8 +37,17 @@ end
 
 wire select = di_en & cnt[`C2LOG_FFT_POINTS-FFT_STAGE];
 
+/***********在 select==0 情况下对旋转因子表进行索引************/
+wire select_not = ~select;
+reg [`C2LOG_FFT_POINTS-1:0] tw_cnt;
+always@(posedge clk or negedge rstn)begin
+    if(~rstn)
+        tw_cnt<=0;
+    else
+        tw_cnt<=select_not ? tw_cnt+1'b1 : 0;
+end
 wire [`C2LOG_FFT_POINTS-1:0] tw_addr;
-assign tw_addr = (select==0) ? (cnt[`C2LOG_FFT_POINTS-FFT_STAGE-1:0])<<(FFT_STAGE-1):0;
+assign tw_addr = select_not ? tw_cnt<<(FFT_STAGE-1):0;
 
 /*********信号声明********/
 wire [`DATA_IN_WIDTH-1:0] tw_re;
