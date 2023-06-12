@@ -87,9 +87,9 @@ Multiply u_Multiply(
 );
 
 /**************/
-Twiddle16 #(
+Twiddle #(
     .TW_FF(0)
-)u_Twiddle16(
+)u_Twiddle(
     .clk    (clk    ),
     .addr   (tw_addr),
     .tw_re  (tw_re  ),

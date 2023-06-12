@@ -21,22 +21,7 @@ module tb_R2SDF_FFT ();
     reg [`DATA_IN_WIDTH-1:0] mem [0:`FFT_POINTS-1];
     reg [`C2LOG_FFT_POINTS-1:0] mem_addr;
     initial begin
-        mem[ 0]=5000;
-        mem[ 1]=500;
-        mem[ 2]=500;
-        mem[ 3]=500;
-        mem[ 4]=0;
-        mem[ 5]=0;
-        mem[ 6]=0;
-        mem[ 7]=0;
-        mem[ 8]=100;
-        mem[ 9]=200;
-        mem[10]=300;
-        mem[11]=400;
-        mem[12]=500;
-        mem[13]=600;
-        mem[14]=700;
-        mem[15]=800;
+        $readmemh("C:/Users/hp/Desktop/FFT/R2SDF/matlab/input_points.txt",mem);
     end
 
     always@(posedge clk or negedge rstn)begin
