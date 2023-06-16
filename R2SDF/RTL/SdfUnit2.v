@@ -3,16 +3,19 @@
 //----------------------------------------------------------------------
 `include "define.v"
 module SdfUnit2 #(
-    parameter   DELAY_DEPTH = 1
+    parameter   DELAY_DEPTH = 1,
+    parameter   FFT_STAGE = 1
 )(
     input   wire                            clk     ,  //  Master Clock
+    input   wire                            rstn    ,  //
     input   wire                            select  ,  //  R2SDF MUX SELECT
+    input   wire                            di_en   ,
     input   wire    [`DATA_IN_WIDTH-1:0]    di_re   ,  //  Input Data (Real)
     input   wire    [`DATA_IN_WIDTH-1:0]    di_im   ,  //  Input Data (Imag)
+    output  wire                            do_en   ,
     output  wire    [`DATA_IN_WIDTH-1:0]    do_re   ,  //  Output Data (Real)
     output  wire    [`DATA_IN_WIDTH-1:0]    do_im      //  Output Data (Imag)
 );
-wire                        do_en   ;   //  Output Data Enable
 //----------------------------------------------------------------------
 //  Internal Regs and Nets
 //----------------------------------------------------------------------
@@ -50,13 +53,19 @@ Butterfly BF (
     .y1_im  (y1_im  )   //  o -
 );
 
-DelayBuffer #(.DELAY_DEPTH(DELAY_DEPTH)) DB (
-    .clk    (clk        ),  //  i
-    .di_re  (db_di_re   ),  //  i
-    .di_im  (db_di_im   ),  //  i
-    .do_re  (db_do_re   ),  //  o
-    .do_im  (db_do_im   )   //  o
-);
+    sdfDelay_dual_ram#(
+        .DELAY_DEPTH(DELAY_DEPTH),
+        .FFT_STAGE(FFT_STAGE)
+    )u_sdfDelay_dual_ram(
+        .clk    (clk        ),
+        .rstn   (di_en      ),
+        .di_re  (db_di_re   ),
+        .di_im  (db_di_im   ),
+        .do_en  (do_en      ),
+        .do_re  (db_do_re   ),
+        .do_im  (db_do_im   )
+    );
+
 
 assign  db_di_re = select    ? y1_re : x0_re;
 assign  db_di_im = select    ? y1_im : x0_im;

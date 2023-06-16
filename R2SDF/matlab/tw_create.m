@@ -1,5 +1,5 @@
 % FFT旋转因子的生成
-N=16;
+N=16384;
 QUANTI_BIT = 16 ;%16bit有符号数进行量化
 
 kn = 0:1:N-1;
@@ -11,7 +11,8 @@ w_img  = sin(-2*pi*kn/N);
 w_real_d = ceil(w_real*2^(QUANTI_BIT-1));
 w_img_d  = ceil(w_img*2^(QUANTI_BIT-1));
 
-file = fopen('tw.txt','wt');
+file_tw_real = fopen('tw_real.txt','wt');
+file_tw_img = fopen('tw_img.txt','wt');
     for i = 1:N
         s_real = w_real_d(i);
         if s_real>0
@@ -31,13 +32,13 @@ file = fopen('tw.txt','wt');
         end
         ss_img = dec2hex(s_img,log2(QUANTI_BIT));
 
-        if i==1
-            fprintf(file, 'w_real  w_img \n');      %数据写入
-            fprintf(file, '%s    %s\n',ss_real,ss_img);      %数据写入
-        elseif i == N
-            fprintf(file, '%s    %s\n',ss_real,ss_img);      %数据写入
+        if i == N
+            fprintf(file_tw_real, '%s\n',ss_real);      %数据写入
+            fprintf(file_tw_img, '%s\n',ss_img);      %数据写入
         else
-            fprintf(file, '%s    %s\n',ss_real,ss_img);      %数据写入
+            fprintf(file_tw_real, '%s\n',ss_real);      %数据写入
+            fprintf(file_tw_img, '%s\n',ss_img);      %数据写入
         end
     end
-fclose(file);
+fclose(file_tw_real);
+fclose(file_tw_img);

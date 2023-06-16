@@ -33,19 +33,19 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	tb_SdfUnit2
 
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2_last_stage.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2_last_stage.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module SdfUnit2_last_stage
+
+Top level modules:
+	SdfUnit2_last_stage
+
 } {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_R2SDF_FFT.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_R2SDF_FFT.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module tb_R2SDF_FFT
 
 Top level modules:
 	tb_R2SDF_FFT
-
-} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module Twiddle8
-
-Top level modules:
-	Twiddle8
 
 } {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -61,6 +61,13 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	SdfUnit2
 
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/sdfDelay_dual_ram.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/sdfDelay_dual_ram.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module sdfDelay_dual_ram
+
+Top level modules:
+	sdfDelay_dual_ram
+
 } {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module DelayBuffer
@@ -71,12 +78,12 @@ Top level modules:
 } {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/define.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/define.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
-} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle16.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle16.v
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate_last_stage.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate_last_stage.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module Twiddle16
+-- Compiling module SdfUnit2Rotate_last_stage
 
 Top level modules:
-	Twiddle16
+	SdfUnit2Rotate_last_stage
 
 } {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -84,5 +91,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	Twiddle
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/dual_ram.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/dual_ram.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module dual_ram
+
+Top level modules:
+	dual_ram
 
 } {} {}}

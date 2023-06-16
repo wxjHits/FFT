@@ -5,15 +5,17 @@ module tb_SdfUnit2();
     reg                             clk;
     reg                             reset;
     reg                             select;
+    reg                             di_en;
     reg     [`DATA_IN_WIDTH-1:0]    di_re;
     reg     [`DATA_IN_WIDTH-1:0]    di_im;
     wire    [`DATA_IN_WIDTH-1:0]    do_re;
     wire    [`DATA_IN_WIDTH-1:0]    do_im;
 
 SdfUnit2 #(
-    .DELAY_DEPTH(1)
+    .DELAY_DEPTH(8)
 )u_SdfUnit2(
     .clk(clk),  //  Master Clock
+    .di_en(di_en),
     .select(select),  //  Input Data Enable
     .di_re(di_re),  //  Input Data (Real)
     .di_im(di_im),  //  Input Data (Imag)
@@ -24,10 +26,12 @@ SdfUnit2 #(
 initial begin
     clk=0;
     reset=1;
+    di_en=0;
     di_re=0;
     di_im=0;
-    #20;
+    #21;
     reset=0;
+    di_en=1;
 end
 always#1 clk=~clk;
 

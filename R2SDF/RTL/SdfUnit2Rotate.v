@@ -17,16 +17,6 @@ module SdfUnit2Rotate #(
 );
 
 /**********cnt的处理***********/
-reg di_en_delay_ram [0:DELAY_DEPTH-1];
-integer n;
-always @(posedge clk) begin
-    for (n = DELAY_DEPTH-1; n > 0; n = n - 1) begin
-        di_en_delay_ram[n] <= di_en_delay_ram[n-1];
-    end
-    di_en_delay_ram[0] <= di_en;
-end
-assign  do_en = di_en_delay_ram[DELAY_DEPTH-1];
-
 reg    [`C2LOG_FFT_POINTS-FFT_STAGE:0] cnt     ;//FFT输入点数计数器，上限为FFT点数
 always@(posedge clk or negedge rstn)begin
     if(~rstn)
@@ -48,13 +38,24 @@ always@(posedge clk or negedge rstn)begin
 end
 wire [`C2LOG_FFT_POINTS-1:0] tw_addr;
 assign tw_addr = select_not ? tw_cnt<<(FFT_STAGE-1):0;
+// reg [`C2LOG_FFT_POINTS-1:0] tw_cnt;
+// always@(posedge clk or negedge rstn)begin
+//     if(~rstn)
+//         tw_cnt<=0;
+//     else
+//         tw_cnt<=select_not ? tw_cnt+1'b1 : 0;
+// end
+// wire [`C2LOG_FFT_POINTS-FFT_STAGE:0] tw_addr;
+// assign tw_addr = select_not ? tw_cnt :0;
 
 /*********信号声明********/
 wire [`DATA_IN_WIDTH-1:0] tw_re;
 wire [`DATA_IN_WIDTH-1:0] tw_im;
 
+wire                      sdfUints_in_en;
 wire [`DATA_IN_WIDTH-1:0] sdfUints_in_re;
 wire [`DATA_IN_WIDTH-1:0] sdfUints_in_im;
+wire                      sdfUints_out_en;
 wire [`DATA_IN_WIDTH-1:0] sdfUints_out_re;
 wire [`DATA_IN_WIDTH-1:0] sdfUints_out_im;
 
@@ -64,19 +65,25 @@ wire [`DATA_IN_WIDTH-1:0] multi_out_im;
 assign sdfUints_in_re = di_en ? di_re:{`DATA_IN_WIDTH{1'b0}};
 assign sdfUints_in_im = di_en ? di_im:{`DATA_IN_WIDTH{1'b0}};
 
-/**************/
+/********delay延时逻辑******/
 SdfUnit2 #(
-    .DELAY_DEPTH (DELAY_DEPTH)
+    .DELAY_DEPTH (DELAY_DEPTH),
+    .FFT_STAGE(FFT_STAGE)
 )u_SdfUnit2(
     .clk    (clk                ),
+    .rstn   (rstn               ),
     .select (select             ),
+    .di_en  (sdfUints_in_en     ),
     .di_re  (sdfUints_in_re     ),
     .di_im  (sdfUints_in_im     ),
+    .do_en  (sdfUints_out_en    ),
     .do_re  (sdfUints_out_re    ),
     .do_im  (sdfUints_out_im    ) 
 );
+assign sdfUints_in_en = di_en   ;
+assign do_en = sdfUints_out_en  ;
 
-/**************/
+/*******组合逻辑*******/
 Multiply u_Multiply(
     .a_re(sdfUints_out_re   ),
     .a_im(sdfUints_out_im   ),
@@ -86,8 +93,9 @@ Multiply u_Multiply(
     .m_im(multi_out_im      )
 );
 
-/**************/
+/*******组合逻辑*******/
 Twiddle #(
+    .FFT_STAGE(FFT_STAGE),
     .TW_FF(0)
 )u_Twiddle(
     .clk    (clk    ),

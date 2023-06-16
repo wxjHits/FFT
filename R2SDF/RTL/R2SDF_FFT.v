@@ -115,6 +115,21 @@ generate
                 .do_im  (sdf_do_im[num] ) 
             );
         end
+        else if(num==`C2LOG_FFT_POINTS-1)begin
+            SdfUnit2Rotate_last_stage #(
+                .DELAY_DEPTH    (2**(`C2LOG_FFT_POINTS-num-1)),
+                .FFT_STAGE      (num+1)
+            )sdf_last(
+                .clk    (clk        ),
+                .rstn   (rstn       ),
+                .di_en  (sdf_do_en[num-1] ),
+                .di_re  (sdf_do_re[num-1] ),
+                .di_im  (sdf_do_im[num-1] ),
+                .do_en  (sdf_do_en[num] ),
+                .do_re  (sdf_do_re[num] ),
+                .do_im  (sdf_do_im[num] ) 
+            );
+        end
         else begin
             SdfUnit2Rotate #(
                 .DELAY_DEPTH    (2**(`C2LOG_FFT_POINTS-num-1)),
