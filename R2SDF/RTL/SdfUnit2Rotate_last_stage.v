@@ -67,7 +67,7 @@ assign sdfUints_in_im = di_en ? di_im:{`DATA_IN_WIDTH{1'b0}};
 
 /********delay延时逻辑******/
 SdfUnit2_last_stage #(
-    .DELAY_DEPTH (DELAY_DEPTH),
+    .DELAY_DEPTH (1),
     .FFT_STAGE(FFT_STAGE)
 )u_SdfUnit2_last_stage(
     .clk    (clk                ),
@@ -81,14 +81,36 @@ SdfUnit2_last_stage #(
     .do_im  (sdfUints_out_im    ) 
 );
 assign sdfUints_in_en = di_en   ;
-assign do_en = sdfUints_out_en  ;
+// assign do_en = sdfUints_out_en  ;
 
 /*******组合逻辑*******/
+reg                       sdfUints_out_en_r ;
+reg  [`DATA_IN_WIDTH-1:0] sdfUints_out_re_r ;
+reg  [`DATA_IN_WIDTH-1:0] sdfUints_out_im_r ;
+reg  [`DATA_IN_WIDTH-1:0] tw_re_r           ;
+reg  [`DATA_IN_WIDTH-1:0] tw_im_r           ;
+always@(posedge clk or negedge rstn)begin
+    if(~rstn)begin
+        sdfUints_out_en_r <=0;
+        sdfUints_out_re_r <=0;
+        sdfUints_out_im_r <=0;
+        tw_re_r           <=0;
+        tw_im_r           <=0;
+    end
+    else begin
+        sdfUints_out_en_r <=sdfUints_out_en;
+        sdfUints_out_re_r <=sdfUints_out_re;
+        sdfUints_out_im_r <=sdfUints_out_im;
+        tw_re_r           <=tw_re          ;
+        tw_im_r           <=tw_im          ;
+    end
+end
+
 Multiply u_Multiply(
-    .a_re(sdfUints_out_re   ),
-    .a_im(sdfUints_out_im   ),
-    .b_re(tw_re             ),
-    .b_im(tw_im             ),
+    .a_re(sdfUints_out_re_r   ),
+    .a_im(sdfUints_out_im_r   ),
+    .b_re(tw_re_r             ),
+    .b_im(tw_im_r             ),
     .m_re(multi_out_re      ),
     .m_im(multi_out_im      )
 );
@@ -104,8 +126,30 @@ Twiddle #(
     .tw_im  (tw_im  ) 
 );
 
-/******输出结果赋值*****/
-assign do_re = multi_out_re;
-assign do_im = multi_out_im;
+// /******输出结果赋值*****/
+// assign do_re = multi_out_re;
+// assign do_im = multi_out_im;
+
+/******输出结果赋值，寄存1个clk*****/
+reg                       do_en_r;
+reg  [`DATA_IN_WIDTH-1:0] do_re_r;
+reg  [`DATA_IN_WIDTH-1:0] do_im_r;
+
+always@(posedge clk or negedge rstn)begin
+    if(~rstn)begin
+        do_en_r<=0;
+        do_re_r<=0;
+        do_im_r<=0;
+    end
+    else begin
+        do_en_r<=sdfUints_out_en_r;
+        do_re_r<=multi_out_re;
+        do_im_r<=multi_out_im;
+    end
+end
+
+assign do_en = do_en_r;
+assign do_re = do_re_r;
+assign do_im = do_im_r;
 
 endmodule

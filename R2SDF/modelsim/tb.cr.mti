@@ -47,13 +47,6 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	tb_R2SDF_FFT
 
-} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module SdfUnit2Rotate
-
-Top level modules:
-	SdfUnit2Rotate
-
 } {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module SdfUnit2
@@ -75,9 +68,6 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	DelayBuffer
 
-} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/define.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/define.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-
 } {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate_last_stage.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate_last_stage.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module SdfUnit2Rotate_last_stage
@@ -85,18 +75,18 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	SdfUnit2Rotate_last_stage
 
-} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle.v
-Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module Twiddle
-
-Top level modules:
-	Twiddle
-
 } {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/dual_ram.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/dual_ram.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module dual_ram
 
 Top level modules:
 	dual_ram
+
+} {} {}} C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle.v {1 {vlog -work work -vopt -stats=none C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Twiddle
+
+Top level modules:
+	Twiddle
 
 } {} {}}

@@ -22,7 +22,7 @@ w1686901100
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/Butterfly.v
 L0 5
 Z2 OL;L;10.5;63
-!s108 1686914227.000000
+!s108 1686918795.000000
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Butterfly.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Butterfly.v|
 !i113 0
@@ -43,7 +43,7 @@ w1686912545
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v
 L0 5
 R2
-Z5 !s108 1686914228.000000
+!s108 1686918796.000000
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/DelayBuffer.v|
 !i113 0
@@ -64,7 +64,7 @@ w1686912581
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/dual_ram.v
 L0 4
 R2
-R5
+!s108 1686918798.000000
 !s107 C:/Users/hp/Desktop/FFT/R2SDF/RTL/dual_ram.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/dual_ram.v|
 !i113 0
@@ -79,12 +79,12 @@ r1
 !s100 FUh]I5B_G5?liZZLVYb2]2
 Io@4FolBlNIEkM6e3O[k4O3
 R1
-Z6 w1686309987
+Z5 w1686309987
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v
 L0 5
 R2
-R5
+Z6 !s108 1686918799.000000
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Multiply.v|
 !i113 0
@@ -105,7 +105,7 @@ w1686905038
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/R2SDF_FFT.v
 L0 2
 R2
-R5
+R6
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/R2SDF_FFT.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/R2SDF_FFT.v|
 !i113 0
@@ -126,7 +126,7 @@ w1686912612
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/sdfDelay_dual_ram.v
 L0 5
 R2
-R5
+R6
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/sdfDelay_dual_ram.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/sdfDelay_dual_ram.v|
 !i113 0
@@ -147,7 +147,7 @@ w1686914195
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2.v
 L0 5
 R2
-Z7 !s108 1686914229.000000
+R6
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2.v|
 !i113 0
@@ -168,7 +168,7 @@ w1686905157
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2_last_stage.v
 L0 6
 R2
-R7
+R6
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2_last_stage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2_last_stage.v|
 !i113 0
@@ -181,15 +181,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 43Z1g6JhO:4SKN8gb5JYA3
-I`;fmFNgkj7oSn6]fnX8RU3
+!s100 aWBeTm5jlUl1h_?lh@dSS2
+I[?n0AbZ63K3hXk``k3^7X1
 R1
-w1686912858
+w1686918571
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v
 L0 5
 R2
-R7
+Z7 !s108 1686918800.000000
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/SdfUnit2Rotate.v|
 !i113 0
@@ -239,7 +239,7 @@ R3
 R4
 ntb_@r2@s@d@f_@f@f@t
 vtb_SdfUnit2
-Z8 !s110 1686914230
+!s110 1686918800
 !i10b 1
 !s100 FGlRh<ZIOQ1@CKL<VX[CJ2
 Ia6<FiV9545f1YO=5Xz16K1
@@ -261,13 +261,13 @@ R3
 R4
 ntb_@sdf@unit2
 vtb_SdfUnit2Rotate
-R8
+!s110 1686918801
 !i10b 1
 !s100 ^_9znN[k8emEO0W[HgbL51
 I;g^5=HWPV?CT>Jk7DcKkK2
 R0
 R1
-R6
+R5
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v
 L0 2
@@ -275,7 +275,7 @@ R2
 r1
 !s85 0
 31
-Z9 !s108 1686914230.000000
+Z8 !s108 1686918801.000000
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/tb_SdfUnit2Rotate.v|
 !i113 0
@@ -296,7 +296,7 @@ w1686912775
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle.v
 L0 5
 R2
-R9
+R8
 !s107 C:\Users\hp\Desktop\FFT\R2SDF\RTL\define.v|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle.v|
 !i113 0
@@ -332,7 +332,7 @@ vTwiddle8
 I;Ff2kSA=[k]6XENfTSj[b1
 R0
 R1
-R6
+R5
 8C:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v
 FC:/Users/hp/Desktop/FFT/R2SDF/RTL/Twiddle8.v
 L0 5
